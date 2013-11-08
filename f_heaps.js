@@ -211,7 +211,7 @@ FHeap.prototype._consolidateHeap = function(rootlist){
 		} else if(prevItem == undefined){
 			prevItem = fillArray[fillArray.length -1];
 		} else if(nextItem == undefined){
-			nextItem = fillArray[1];
+			nextItem = fillArray[0];
 		}
 		item.prev = prevItem;
 		prevItem.next = item;
